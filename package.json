@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@create-figma-plugin/ui": "^3.1.0",
+    "@create-figma-plugin/utilities": "^3.1.0",
+    "chroma-js": "^2.4.2",
+    "preact": ">=10"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^3.1.0",
+    "@create-figma-plugin/tsconfig": "^3.1.0",
+    "@figma/plugin-typings": "1.82.0",
+    "@types/chroma-js": "^2.4.3",
+    "typescript": ">=4"
+  },
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "1329778999728055045",
+    "name": "Delta-E Calculator",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx",
+    "networkAccess": { "allowedDomains": ["none"] }
+  }
+}
